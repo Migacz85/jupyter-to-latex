@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University/School Laboratory Report
+% LaTeX Template
+% Version 4.0 (March 21, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@latextemplates.com)
+% Linux and Unix Users Group at Virginia Tech Wiki
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	letterpaper, % Paper size, specify a4paper (A4) or letterpaper (US letter)
+	10pt, % Default font size, specify 10pt, 11pt or 12pt
+]{CSUniSchoolLabReport}
+
+%For line spacing between the markdown that was
+% the best what I found
+
+% \markdownSetup{
+%   renderers = {
+%   interblockSeparator = { \vspace{0.3cm} },
+%   },
+% }
+
+% \markdownSetup{
+% 	renderers = {
+% 	  lineBreak = {%
+% 		\par
+% 		\emph{(A forced linebreak)}%
+% 		\par
+% 	  },
+% 	},
+%   }
+% https://github.com/Witiko/markdown/issues/73
+%\markdownSetup{underscores=false}
+\usepackage{biblatex}
+
+\addbibresource{My Library.bib} % Bibliography file (located in the same folder as the template)
+\addbibresource{Bibliography.bib} % Bibliography file (located in the same folder as the template)
+
+%----------------------------------------------------------------------------------------
+%	REPORT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Artificial Neural Network \\ in classification} % Report title
+
+\author{Marcin \textsc{Mrugacz}} % Author name(s), add additional authors like: '\& James \textsc{Smith}'
+
+\date{\today} % Date of the report
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle % Insert the title, author and date using the information specified above
+
+\begin{center}
+	\begin{tabular}{l r}
+		Date Performed: & December 5, 2022 \\ % Date the experiment was performed
+		Instructor: & David \textsc{McQuaid} % Instructor/supervisor
+	\end{tabular}
+\end{center}
+
+
+% If you need to include an abstract, uncomment the lines below
+%\begin{abstract}
+%	Abstract text
+%\end{abstract}
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+\setkeys{Gin}{width=.8\linewidth}
+
+\clearpage
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+%\markdownInput{md/1.md}
+
+\markdownInput{md/global_markdown.md}
+
+
+\clearpage
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\pagebreak
+
+\begin{appendix}
+	\listoffigures
+	\listoftables
+	%\listofequations
+	\printbibliography % Output the bibliography
+\end{appendix}
+
+
+\pagebreak
+%----------------------------------------------------------------------------------------
+
+\end{document}
